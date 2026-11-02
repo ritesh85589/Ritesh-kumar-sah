@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f0f4ff;
+    color: #202b45;
+}
+
+header {
+    background: #1746a2;
+    color: white;
+    text-align: center;
+    padding: 25px 12px;
+}
+
+header h1 {
+    margin: 0 0 8px;
+}
+
+header p {
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 700px;
+    margin: 35px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px #00000015;
+}
+
+h2 {
+    color: #1746a2;
+}
+
+.quiz-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 15px;
+}
+
+#timer {
+    color: #d62828;
+}
+
+.progress-track {
+    background: #e1e7f5;
+    height: 8px;
+    border-radius: 8px;
+    margin: 18px 0;
+    overflow: hidden;
+}
+
+#progress {
+    background: #21a366;
+    height: 100%;
+    width: 0%;
+    transition: width 0.2s;
+}
+
+#options {
+    display: grid;
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.option {
+    display: block;
+    padding: 14px;
+    border: 1px solid #ccd5e5;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.option:hover {
+    background: #eef3ff;
+}
+
+.option input {
+    margin-right: 10px;
+}
+
+.option.selected {
+    background: #e2ebff;
+    border-color: #1746a2;
+}
+
+button {
+    border: none;
+    border-radius: 7px;
+    padding: 12px 18px;
+    margin: 5px 3px;
+    background: #1746a2;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #103477;
+}
+
+button:disabled {
+    background: #aab3c3;
+    cursor: not-allowed;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.correct {
+    color: #14804a;
+}
+
+.incorrect {
+    color: #d62828;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    color: #596579;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 18px;
+        margin: 20px auto;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+}
